@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'diagnoses/index'
   root to: 'diagnoses#index'
+  resources :users, only: [:edit, :update]
 end
