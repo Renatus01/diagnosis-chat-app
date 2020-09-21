@@ -2,20 +2,19 @@
   <div class="header-name">
     <%= link_to current_user.name , edit_user_path(current_user) %>
   </div>
-  <div class="create-room">
-    <a href="#">チャットを作成する</a>
+  <% if current_user.admin?  %>
+  <div class="create-menu">
+    <%= link_to "menuを作成する", new_menu_path %>
   </div>
+  <% end %>
 </div>
 
-<div class="rooms">
- <div class="room">
-    <div class="room-name">
-      <a href="#">techroom1</a>
+<div class="menus">
+<% current_user.menus.each do |menu| %>
+  <div class="menu">
+    <div class="menu-name">
+      <%= link_to menu.name, menu_diagnoses_path(menu) %>
     </div>
   </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom2</a>
-    </div>
-  </div>
+ <% end %>
 </div>

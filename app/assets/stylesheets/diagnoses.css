@@ -22,27 +22,27 @@
   text-decoration: none;
 }
 
-.create-room {
+.create-menu {
   font-size: 10px;
 }
 
-.create-room a {
+.create-menu a {
   border: 1px solid lightblue;
   padding: 14px;
   color: deepskyblue;
   text-decoration: none;
 }
-.rooms {
+.menus {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
 }
-.room {
+.menu {
   padding: 20px 0 40px;
 }
 
-.room-name a {
+.menu-name a {
   text-decoration: none;
   color: white;
 }

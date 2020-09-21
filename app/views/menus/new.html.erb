@@ -3,25 +3,33 @@
   <%=form_with model: @menu, local: true do |f|%>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
-        <%= f.label :チャットルーム名, class: 'chat-room-form__label'%>
+        <%= f.label :Menu名, class: 'chat-room-form__label'%>
       </div>
       <div class='chat-room-form__field--right'>
-        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'チャットルーム名を入力してください'%>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'Menu名を入力してください'%>
       </div>
     </div>
     <div class='chat-room-form__field'>
     </div>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
-        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
+        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>作成者</label>
       </div>
       <div class='chat-room-form__field--right'>
+        <select name="menu[user_id]">
+          <option value="">adminユーザーを選択してください</option>
+            <% User.all.where(id: current_user.id).each do |user| %>
+              <option value=<%=user.id%>><%= user.name %></option>
+          <% end %>
+        </select>
+
       </div>
     </div>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'></div>
       <div class='chat-room-form__field--right'>
         <%= f.submit class: 'chat-room-form__action-btn'%>
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
       </div>
     </div>
   <% end %>
