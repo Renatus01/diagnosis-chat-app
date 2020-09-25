@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript"　src="../interview.js"></script>
+  </head> 
+  
+  <body> 
+  
+    <div class="choose_box">
+     
+    <div id="q_01" class="fit">
+    <p>質問1</p>
+    <p>朝の目覚めは？</p>
+    <ul class="flexbox fw">
+    <li class="even"><a class="btn" href="#q_02" value= 3 >気持ちいい</a></li>
+    <li class="odd"> <a class="btn" href="#q_02" value= 2 >普通</a></li>
+    <li class="odd"> <a class="btn" href="#q_02" value= 1 >悪い</a></li>
+    </ul>
+    </div>
+    <!-- 最初の選択肢 -->
+      
+    <div id="q_02" style="display: none;">
+    <p>質問2</p>
+    <p>布団に入ってから眠るまでの時間は？</p>
+    <ul class="flexbox fw">
+    <li class="even"><a class="btn" href="#q_03" value= 3 >10分以下</a></li>
+    <li class="odd"> <a class="btn" href="#q_03" value= 2 >10分〜30分</a></li>
+    <li class="odd"> <a class="btn" href="#q_03" value= 1 >30分以上</a></li>
+    </ul>
+    </div>
+    <!-- 次の選択肢 -->
+      
+    <div id="q_03" style="display: none;">
+    <p>質問3</p>
+    <p>夜中目が覚める回数は？</p>
+    <ul class="flexbox fw">
+      <li class="even"><a class="btn" href="#q_04" value= 3 >0回</a></li>
+      <li class="odd"> <a class="btn" href="#q_04" value= 2 >1回〜2回</a></li>
+      <li class="odd"> <a class="btn" href="#q_04" value= 1 >3回以上</a></li>
+    </ul>
+    </div>
+    <!-- 次の選択肢 -->
+      
+    <div id="q_04" style="display: none;">
+    <p>質問4</p>
+    <p>日中の眠気は？</p>
+    <ul class="flexbox fw">
+      <li class="even"><a class="btn" href="#q_05" value= 3 >全くない</a></li>
+      <li class="odd"> <a class="btn" href="#q_05" value= 2 >時々ある</a></li>
+      <li class="odd"> <a class="btn" href="#q_05" value= 1 >ある</a></li>
+    </ul>
+    </div>
+    <!-- 次の選択肢 -->
+      
+    <div id="q_10" style="display: none;">
+    <p>質問2？</p>
+    <ul class="flexbox fw">
+    <li class="even"><a class="btn" href="#q_06">選択肢4-1</a></li>
+    <li class="odd"> <a class="btn" href="#q_07">選択肢4-2</a></li>
+    </ul>
+    </div>
+    <!-- 次の選択肢 -->
+      
+      
+    <div id="q_05" style="display: none;">
+            <p>あなたにおすすめなのは…</p>
+            <h4>『答え①』です！！</h4>
+      <span><a class="btn" href="#q_01">もどる</a></span>
+    </div>
+      
+    <!-- 選択肢の答え① -->
+      
+      <div id="q_07" style="display: none;">
+            <p>あなたにおすすめなのは…</p>
+            <h4>『答え②』です！！</h4>
+        <span><a class="btn" href="#q_01">もどる</a></span>
+    </div>
+      
+    <!-- 選択肢の答え② -->
+    </div>
+
+  </body>
+</html>

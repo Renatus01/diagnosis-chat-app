@@ -1,8 +1,10 @@
 class MenusController < ApplicationController
 
-  # def index
-  #   admin_user =  User.first 
-  # end
+  def index
+    @menu = Menu.new
+    # admin_user =  User.first 
+    # @menu = Menu.find(params[:menu_id])
+  end
 
   def new
     @menu = Menu.new
@@ -17,9 +19,15 @@ class MenusController < ApplicationController
     end
   end
 
+  def destroy
+    menu = Menu.find(params[:id])
+    menu.destroy
+    redirect_to root_path
+  end
+
   private
 
   def menu_params
-    params.require(:menu).permit(:name,:user_id)
+    params.require(:menu).permit(:name, :user_id)
   end
 end

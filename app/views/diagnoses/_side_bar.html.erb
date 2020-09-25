@@ -10,11 +10,13 @@
 </div>
 
 <div class="menus">
-<% current_user.menus.each do |menu| %>
+      
+<%# <% current_user.menus.each do |menu| %> 
   <div class="menu">
     <div class="menu-name">
-      <%= link_to menu.name, menu_diagnoses_path(menu) %>
+      <a href="#">睡眠診断</a> 
+      <%# <%= link_to menu.name, menu_diagnoses_path(menu) %> 
     </div>
   </div>
- <% end %>
+  <%# <% end %> 
 </div>
