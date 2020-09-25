@@ -1,53 +1,28 @@
 <div class="chat-header">
  <div class="left-header">
     <div class="header-title">
-      hogefuga
+      <%= '睡眠診断(全4問)' %>
+         <%# <%= @menu.name %> 
     </div>
   </div>
   <div class="right-header">
+  <% if current_user.admin?  %>
     <div class="header-button">
-      <a href="#">チャットを終了する</a>
+      <%# <a href="#">Menuを終了する</a> %>
+      <%# <%= link_to "Menuを終了する", menu_path(@menu), method: :delete %> 
     </div>
+  <% end %>
   </div>
 </div>
 
 <div class="messages">
- <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Tom
-      </div>
-      <div class="message-date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        おはよう
-      </div>
-    </div>
-  </div>
-
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Sim
-      </div>
-      <div class="message-date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        こんばんは
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'interview2' %>
 </div>
 
-<div class="form">
+
+<%# <div class="form">
   <div class="form-input">
     <input class="form-message" placeholder= "type a message">
   </div>
   <input class="form-submit" type="submit" value="送信">
-</div>
+</div> %>
