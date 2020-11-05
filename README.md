@@ -77,12 +77,9 @@ Things you may want to cover:
 
 * 洗い出した要件        質問に回答して健康を診断できる機能。また、それを保存する機能。
 
-* 実装した機能についてのGIFと説明  (https://user-images.githubusercontent.com/69130505/98213539-8d34e780-1f88-11eb-9de5-a95766b61989.gif)
+* 実装した機能についてのGIFと説明  ![diagnosis-chat-app]
+(https://user-images.githubusercontent.com/69130505/98213539-8d34e780-1f88-11eb-9de5-a95766b61989.gif)
 
-
-* Demo
-Depending on input, the output is displayed as the result like the image below.
-![result](https://github.com/(Renatus01)/(diagnosis-chat-app)/blob/media/https://gyazo.com/215e4c1750c765163a7f180b7354b23e)
 
 * 実装予定の機能        診断情報を記録し、カレンダーで月表示できるようにします。また、診断メニューを増やしたいと思います。
 
