@@ -82,7 +82,8 @@ Things you may want to cover:
 
 * 実装予定の機能        診断情報を記録し、カレンダーで月表示できるようにします。また、診断メニューを増やしたいと思います。
 
-* データベース設計         https://gyazo.com/2a90715b4428731cab1d1fff23269c43
+* データベース設計  
+![7159feea4f6f0f52dda0b4df99d94c37](https://user-images.githubusercontent.com/69130505/98216712-c3746600-1f8c-11eb-87d3-4d7e1a7388e8.png)
 
 * ローカルでの動作方法:     ログイン  →  任意の診断メニューを選ぶ  →  質問に回答する
                          rails _6.0.0_
