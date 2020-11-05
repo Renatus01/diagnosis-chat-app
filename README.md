@@ -78,8 +78,7 @@ Things you may want to cover:
 * 洗い出した要件        質問に回答して健康を診断できる機能。また、それを保存する機能。
 
 * 実装した機能についてのGIFと説明  
-![diagnosis-chat-app](https://user-images.githubusercontent.com/69130505/98213539-8d34e780-1f88-11eb-9de5-a95766b61989.gif)
-
+![215e4c1750c765163a7f180b7354b23e](https://user-images.githubusercontent.com/69130505/98215513-3aa8fa80-1f8b-11eb-985e-7fcc8797ebe2.gif)
 
 * 実装予定の機能        診断情報を記録し、カレンダーで月表示できるようにします。また、診断メニューを増やしたいと思います。
 
