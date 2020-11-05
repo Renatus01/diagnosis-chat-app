@@ -79,11 +79,15 @@ Things you may want to cover:
 
 * 実装した機能についてのGIFと説明  https://gyazo.com/8b19e2256ca891ad99df5bafba14f578
 
+* Demo
+Depending on input, the output is displayed as the result like the image below.
+![result](https://github.com/(Renatus01)/(diagnosis-chat-app)/blob/media/https://gyazo.com/215e4c1750c765163a7f180b7354b23e)
+
 * 実装予定の機能        診断情報を記録し、カレンダーで月表示できるようにします。また、診断メニューを増やしたいと思います。
 
 * データベース設計         https://gyazo.com/2a90715b4428731cab1d1fff23269c43
 
-* ローカルでの動作方法:     ログイン　→　任意の診断メニューを選ぶ　→　質問に回答する
+* ローカルでの動作方法:     ログイン  →  任意の診断メニューを選ぶ  →  質問に回答する
                          rails _6.0.0_
 
 * ...
